@@ -1,34 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .template{
+    margin-top: 15%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: left;
+    box-shadow: 10px 10px rgba(0, 0, 0, 1);
+
+  }
+  .template img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .template button{
+    border: none;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+     background-color: hsl(47, 88%, 63%);
+  }
+  .template h1{
+    font-size: 1.5rem;
+    margin-bottom:25px;
+  }
+  .template p{
+       margin-bottom: 20px;
+  }
+  .tray{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tray img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .attribution{
+    margin-top:auto;
+  }
+  .one{
+    color: grey;
+  }
   </style>
 </head>
 <body>
+<div class="container">
 
-  Learning
+<div class="template">
+  <img src="./assets/images/image-jeremy.png" alt="idbook"><br/>
+  <button>Learning</button>
+  <p >Published 21 Dec 2023</p>
 
-  Published 21 Dec 2023
+  <h1>HTML & CSS foundations</h1>
+  <p class="one">These languages are backbone of every website,defining structure,content and presentation</p>
+  <div class="tray">
+  <img src="./assets/images/icon-view.svg" alt="view-con"  >
+    <h3 class="two">Greg Hooper</h3>
+  </div>
 
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">mokshagna</a>.
   </div>
+</div>
 </body>
 </html>
